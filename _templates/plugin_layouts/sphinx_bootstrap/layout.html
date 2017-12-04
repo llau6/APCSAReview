@@ -184,18 +184,16 @@
       </ul>
 
       <ul class="nav navbar-nav">
-        <li class="divider-vertical"></li>
-        <!--{% block sidebartoc %}
-          {% include "localtoc.html" %}
           <li class="divider-vertical"></li>
-        {% endblock %}
-        {% block sidebarrel %}
-          {% include "relations.html" %}
-        {% endblock %}-->
-        {% if theme_source_link_position == "nav" %}
-          <li>{% include "sourcelink.html" %}</li>
-        {% endif %}
-      </ul>
+          {% block sidebartoc %}
+            {% include "globaltoc.html" %}
+            <li class="divider-vertical"></li>
+          {% endblock %}
+          {% if theme_source_link_position == "nav" %}
+            <li>{% include "sourcelink.html" %}</li>
+          {% endif %}
+        </ul>
+        {% include "progress.html" %}  
 
     </div>
   </div>

@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Java Review for the AP CS A Exam &#8212; Runestone Interactive Overview</title>
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="_static/activecode.css" type="text/css" />
+    <link rel="stylesheet" href="_static/clickable.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pytutor.css" type="text/css" />
+    <link rel="stylesheet" href="_static/modal-basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/datafile.css" type="text/css" />
+    <link rel="stylesheet" href="_static/dragndrop.css" type="text/css" />
+    <link rel="stylesheet" href="_static/fitb.css" type="text/css" />
+    <link rel="stylesheet" href="_static/parsons.css" type="text/css" />
+    <link rel="stylesheet" href="_static/lib/prettify.css" type="text/css" />
+    <link rel="stylesheet" href="_static/poll.css" type="text/css" />
+    <link rel="stylesheet" href="_static/showEval.css" type="text/css" />
+    <link rel="stylesheet" href="_static/tabbedstuff.css" type="text/css" />
+    <link rel="stylesheet" href="_static/video.css" type="text/css" />
+    <link rel="stylesheet" href="_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="_static/runestone-custom-sphinx-bootstrap.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/runestonebase.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="_static/codemirror.js"></script>
+    <script type="text/javascript" src="_static/xml.js"></script>
+    <script type="text/javascript" src="_static/css.js"></script>
+    <script type="text/javascript" src="_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="_static/python.js"></script>
+    <script type="text/javascript" src="_static/javascript.js"></script>
+    <script type="text/javascript" src="_static/activecode.js"></script>
+    <script type="text/javascript" src="_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="_static/clike.js"></script>
+    <script type="text/javascript" src="_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="_static/animationbase.js"></script>
+    <script type="text/javascript" src="_static/mchoice.js"></script>
+    <script type="text/javascript" src="_static/timedmc.js"></script>
+    <script type="text/javascript" src="_static/timed.js"></script>
+    <script type="text/javascript" src="_static/clickable.js"></script>
+    <script type="text/javascript" src="_static/timedclickable.js"></script>
+    <script type="text/javascript" src="_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="_static/pytutor.js"></script>
+    <script type="text/javascript" src="_static/codelens.js"></script>
+    <script type="text/javascript" src="_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="_static/datafile.js"></script>
+    <script type="text/javascript" src="_static/dragndrop.js"></script>
+    <script type="text/javascript" src="_static/timeddnd.js"></script>
+    <script type="text/javascript" src="_static/fitb.js"></script>
+    <script type="text/javascript" src="_static/timedfitb.js"></script>
+    <script type="text/javascript" src="_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="_static/parsons.js"></script>
+    <script type="text/javascript" src="_static/timedparsons.js"></script>
+    <script type="text/javascript" src="_static/poll.js"></script>
+    <script type="text/javascript" src="_static/reveal.js"></script>
+    <script type="text/javascript" src="_static/shortanswer.js"></script>
+    <script type="text/javascript" src="_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="_static/showEval.js"></script>
+    <script type="text/javascript" src="_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="_static/rangy-core.js"></script>
+    <script type="text/javascript" src="_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="_static/user-highlights.js"></script>
+    <script type="text/javascript" src="_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="1. Preface and Getting Setup" href="GettingStarted/toctree.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'apcsareview';
+  eBookConfig.logLevel = 10;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = true;
+  eBookConfig.python3 = false;
+  eBookConfig.basecourse = 'apcsareview';
+  eBookConfig.runestone_version = '';
+</script>
+
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+  </head>
+  <body>
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        <a class="brand-logo" style='background: transparent url("_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+        <a class="navbar-brand" href="#">Java Review</a>
+      </div>
+    </div>
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="divider-vertical"></li>
+
+        <!-- social media dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-share-alt" style="opacity: 0.9"></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone" class="twitter-follow-button" data-show-count="true">Follow @iRunestone</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                <div class="fb-like" data-href="https://www.facebook.com/RunestoneInteractive" data-send="false" data-layout="button_count" data-width="300" data-show-faces="false" data-font="arial"></div>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHNwYJKoZIhvcNAQcEoIIHKDCCByQCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYAcrkqh1hn3lYqIpfXxNqe1T82EhXzCJGy1yMAmklpyZshyMkfDGe1Bhx+iwyGeoYRTTyphFmP+9M3NyO0+Q5XdHxgZPx/zYjjBxlZHgEV6jhE8bN2fHkkPf0VHfz0a0QQylQOPlKiOTZV7B37Jpk6yM47oVZ1tG/KNm0NkfmB76DELMAkGBSsOAwIaBQAwgbQGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIi0GmFfOlcjuAgZBbYOo9UO+CpMQa+PYqwsUmUnJvXIImeMeNI3KVTUx5Cfk9gNMo3WzPeiB5IqZo9nRAQ0mf1qL2ecLeB5tidM+lgBUhOxfj3/FecpnVFa0263gp4g+PLw8jzhvVRdUon1K3SeO1Rzh23fIRKwnrD6btt73uwtj0sl3tGd8qz+6GIcwPDdRk9VcUffiBJT/ZagKgggOHMIIDgzCCAuygAwIBAgIBADANBgkqhkiG9w0BAQUFADCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wHhcNMDQwMjEzMTAxMzE1WhcNMzUwMjEzMTAxMzE1WjCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMFHTt38RMxLXJyO2SmS+Ndl72T7oKJ4u4uw+6awntALWh03PewmIJuzbALScsTS4sZoS1fKciBGoh11gIfHzylvkdNe/hJl66/RGqrj5rFb08sAABNTzDTiqqNpJeBsYs/c2aiGozptX2RlnBktH+SUNpAajW724Nv2Wvhif6sFAgMBAAGjge4wgeswHQYDVR0OBBYEFJaffLvGbxe9WT9S1wob7BDWZJRrMIG7BgNVHSMEgbMwgbCAFJaffLvGbxe9WT9S1wob7BDWZJRroYGUpIGRMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbYIBADAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBQUAA4GBAIFfOlaagFrl71+jq6OKidbWFSE+Q4FqROvdgIONth+8kSK//Y/4ihuE4Ymvzn5ceE3S/iBSQQMjyvb+s2TWbQYDwcp129OPIbD9epdr4tJOUNiSojw7BHwYRiPh58S1xGlFgHFXwrEBb3dgNbMUa+u4qectsMAXpVHnD9wIyfmHMYIBmjCCAZYCAQEwgZQwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tAgEAMAkGBSsOAwIaBQCgXTAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0xMzExMDMxMzQxMzFaMCMGCSqGSIb3DQEJBDEWBBRDJF8w+zsMr7FSk+pwinB5f5D4rzANBgkqhkiG9w0BAQEFAASBgHw1LMHpkpaqHIvDGdFE0eG+2mZlmMnUeDCBhQlbc7QMzFQYKTV94NfaebBO4PmNdADe1rq4WidSRZZbE7CzkX9IGENYnBTWY0hb2l0lGdGrJdGeWyV3ekg9WVaFMMumrekds96h3Cx7dGz2kWDzIai2iEXE/qoE+xpkyXAYZNV3-----END PKCS7-----
+                  ">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li>
+        <!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='#'>Table of Contents</a></li>
+            
+            <li><a href='/runestone/static/apcsareview/genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <!-- user account dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-user" style="opacity:0.9;"></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><span class='loggedinuser'></span></li>
+            <li class="divider"></li>
+            <li><a href='/runestone/default/courses'>Change Course</a></li>
+            <li class="divider"></li>
+            <li><a href='http://127.0.0.1:8000/runestone/mygroup/initiateGroup' id="joinGroupLink">Join a Study Group</a></li>
+            <li><a href='http://127.0.0.1:8000/runestone/mygroup/schedule' id="groupScheduleLink">Group Schedule</a></li>
+            <li><a href='http://127.0.0.1:8000/runestone/mygroup/newschedule' id="newChapterLink">Schedule New Chapter</a></li>
+            <li><a href='http://127.0.0.1:8000/runestone/mygroup/manageGroup' id="manageGroupLink">Manage Group</a></li>
+			<li class="divider"></li>
+            <li><a href='http://127.0.0.1:8000/runestone/admin/index'>Instructor's Page</a></li>
+            <li><a href='http://127.0.0.1:8000/runestone/assignments/index'>Progress Page</a></li>
+            <li class="divider"></li>
+            <li><a href="http://127.0.0.1:8000/runestone/default/user/profile" id="profilelink">Edit Profile</a></li>
+            <li><a href="http://127.0.0.1:8000/runestone/default/user/change_password" id="passwordlink">Change Password</a></li>
+            <li><a href="http://127.0.0.1:8000/runestone/default/user/register" id="registerlink">Register</a></li>
+            <li class='loginout'><a href='#'>Login</a></li> <!-- correct link populated by addNavbarLoginLink() -->
+          </ul>
+        </li>
+        <!-- end user account dropdown -->
+        
+        <li class="divider-vertical"></li>
+
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='/runestone/static/apcsareview/navhelp.html'>Navigation Help</a></li>
+            <li><a href='/runestone/static/overview/instructor.html'>Help for Instructors</a></li>
+            <li class="divider"></li>
+            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
+            <li><a href='/runestone/default/reportabug?course=apcsareview&page=index'>Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+
+      </ul>
+
+      <ul class="nav navbar-nav">
+          <li class="divider-vertical"></li>
+          
+            <li class="dropdown globaltoc-container">
+  <a href="#"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Chapters <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul>
+<li class="toctree-l1"><a class="reference internal" href="GettingStarted/toctree.html">1. Preface and Getting Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="JavaBasics/toctree.html">2. Java Basics: Classes and Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="VariableBasics/toctree.html">3. Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Strings/toctree.html">4. Strings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Conditionals/toctree.html">5. Conditionals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Labs/toctree.html">6. Magpie Chatbot Lab</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LoopBasics/toctree.html">7. Loops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ArrayBasics/toctree.html">8. Arrays</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ListBasics/toctree.html">9. List and ArrayList</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Array2dBasics/toctree.html">10. Two-dimensional Arrays</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OOBasics/toctree.html">11. Object-Oriented Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Recursion/toctree.html">12. Recursion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SearchSort/toctree.html">13. Searching and Sorting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tests/toctree.html">14. Preparing for the Exam</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TimedTests/toctree.html">15. Timed Multiple-Choice Exams</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Appendix/DrJava.html">DrJava (an IDE)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Appendix/gridWorld.html">Setting up DrJava for GridWorld</a></li>
+</ul>
+</ul>
+</li>
+            <li class="divider-vertical"></li>
+          
+          
+            <li></li>
+          
+        </ul>
+        <script>
+    function parseBook(parent, book) {
+    for(var i = 0; i < parent.childNodes.length; i++){
+      var child = parent.childNodes[i];
+      if (child.className == "toctree-l1") {
+        var chapterName = (child.childNodes[0].textContent===undefined) ? child.childNodes[0].innerText : child.childNodes[0].textContent;
+        book.chapterNames.push(chapterName);
+        book.chapterSectionPaths.push([]);
+        book.chapterSectionNames.push([]);
+      }
+      if (child.nodeName == "A" && book.chapterSectionPaths.length != 0
+        && child.pathname != "/"
+        && child.pathname != "/genindex.html"
+        && child.pathname != "/search.html") {
+        var path = book.chapterSectionPaths.pop();
+        if (path[path.length-1] != child.pathname) {
+          path.push(child.pathname);
+          var name = book.chapterSectionNames.pop();
+          var sectionName = (child.childNodes[0].textContent===undefined) ? child.childNodes[0].innerText : child.childNodes[0].textContent;
+          name.push(sectionName);
+          book.chapterSectionNames.push(name);
+          book.bookTotal += 1;
+        }
+        book.chapterSectionPaths.push(path);
+      }
+      parseBook(child, book);
+    }
+  }
+
+    function loadProgressBar() {
+    curPath = window.location.pathname;
+    if (curPath == "/" || curPath == "/index.html") {
+      var book = {
+        chapterNames: [],
+        chapterSectionPaths: [],
+        chapterSectionNames: [],
+        curChapter: null,
+        curSection: null,
+        curChapterPercent: 0,
+        curBookPercent: 0,
+        bookTotal: 0
+      };
+      parseBook(document.getElementById("main-content"), book);
+      console.log("book: ", book);
+      localStorage.setItem("book", JSON.stringify(book));
+    } else {
+      var book = JSON.parse(localStorage.getItem("book"));
+      for (var i = 0; i < book.chapterSectionPaths.length; i++) {
+        var chapter = book.chapterSectionPaths[i];
+        var chapterIndex = chapter.indexOf(curPath);
+        if (chapterIndex != -1) {
+          book.curChapter = book.chapterNames[i];
+          book.curSection = book.chapterSectionNames[i][chapterIndex];
+          book.curChapterPercent = 100*((chapterIndex+1)/parseFloat(chapter.length));
+          var bookProgressCount = chapterIndex;
+          for (var j = 0; j < i; j++) {
+            bookProgressCount += book.chapterSectionPaths[j].length;
+          }
+          book.curBookPercent = Math.floor(100*(bookProgressCount/parseFloat(book.bookTotal)));
+        }
+      }
+      document.getElementById("locationText").innerHTML = book.curChapter + "<br>" + book.curSection;
+      document.getElementById("bookProgress").innerHTML = "Progress in Book: " + book.curBookPercent + "%";
+      document.getElementById("progressBar").style.width = book.curChapterPercent-1 + "%";
+    }
+  }
+  document.addEventListener('DOMContentLoaded', function() {
+    loadProgressBar();
+  }, false);
+</script>
+<div class="navbar-collapse collapse navbar-ex1-collapse">
+    <div style="width:49%; float:right">
+        <h5 id="locationText" style="margin:0px; float:left; width:65%"></h5>   
+        <div style="width:35%; float:left;">
+            <h5 style="float:left; margin: 0px; padding-bottom:0px;">Progress in Chapter: </h5>
+            <div id="chapterProgress" style="margin-left:5px; margin-top:12px; float:left; width:25%; border:1px solid grey;">
+                <div id="progressBar" style="margin-left:0px; margin-top:1px; width:1%; height:9px; background-color:limegreen;"></div>
+            </div>
+            <h5 id="bookProgress" style="padding-top:0px; margin:0px; float:left;">Progress in Book: 0%</h5>          
+        </div>     
+    </div>
+</div>  
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content">
+  
+  <div class="section" id="java-review-for-the-ap-cs-a-exam">
+<h1>Java Review for the AP CS A Exam<a class="headerlink" href="#java-review-for-the-ap-cs-a-exam" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="assignments">
+<h2>Assignments<a class="headerlink" href="#assignments" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><a href="/runestone/assignments/chooseAssignment.html">Assignments</a></li>
+</ul></div>
+<div class="section" id="table-of-contents">
+<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="GettingStarted/toctree.html">1. Preface and Getting Setup</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="GettingStarted/preface.html">1.1. Preface</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="GettingStarted/preface.html#about-the-exam">1.1.1. About the Exam</a></li>
+<li class="toctree-l3"><a class="reference internal" href="GettingStarted/preface.html#acknowledgements">1.1.2. Acknowledgements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="GettingStarted/preface.html#contributors">1.1.3. Contributors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="GettingStarted/preface.html#license">1.1.4. License</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="GettingStarted/ptest1.html">1.2. Pretest for the AP CS A Exam</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="JavaBasics/toctree.html">2. Java Basics: Classes and Objects</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="JavaBasics/whatIsJava.html">2.1. What is Java?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="JavaBasics/introClassObject.html">2.2. What is a Class and an Object?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="JavaBasics/firstClass.html">2.3. First Example Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="JavaBasics/compileTimeErrors.html">2.4. Compiler Errors</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="JavaBasics/compileTimeErrors.html#compile-time-error-1">2.4.1. Compile Time Error 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="JavaBasics/compileTimeErrors.html#compile-time-error-2">2.4.2. Compile Time Error 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="JavaBasics/compileTimeErrors.html#compile-time-error-3">2.4.3. Compile Time Error 3</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="JavaBasics/firstOOClass.html">2.5. An Object Oriented Class Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="JavaBasics/runClass.html">2.6. Running a Java Program</a></li>
+<li class="toctree-l2"><a class="reference internal" href="JavaBasics/partsOfAClass.html">2.7. Parts of a Java Class</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="JavaBasics/partsOfAClass.html#fields-instance-variables">2.7.1. Fields - Instance Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="JavaBasics/partsOfAClass.html#constructors">2.7.2. Constructors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="JavaBasics/partsOfAClass.html#methods">2.7.3. Methods</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="JavaBasics/JavaBasicsSummary.html">2.8. Intro to Java - Summary</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="JavaBasics/JavaBasicsSummary.html#concept-summary">2.8.1. Concept Summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="JavaBasics/JavaBasicsSummary.html#java-keyword-summary">2.8.2. Java Keyword Summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="JavaBasics/JavaBasicsSummary.html#example-class-diagram-and-class">2.8.3. Example Class Diagram and Class</a></li>
+<li class="toctree-l3"><a class="reference internal" href="JavaBasics/JavaBasicsSummary.html#practice">2.8.4. Practice</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="VariableBasics/toctree.html">3. Variables</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="VariableBasics/vIntro.html">3.1. What is a Variable?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VariableBasics/vIntro.html#variable-types-on-the-exam">3.1.1. Variable Types on the Exam</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VariableBasics/declareVars.html">3.2. Declaring Variables in Java</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VariableBasics/changeVars.html">3.3. Changing Variables in Java</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VariableBasics/nameVars.html">3.4. Naming Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VariableBasics/operators.html">3.5. Operators</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VariableBasics/operators.html#modulus">3.5.1. Modulus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="VariableBasics/operators.html#modulus-on-past-exams">3.5.2. Modulus on Past Exams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="VariableBasics/operators.html#shortcut-operators">3.5.3. Shortcut Operators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VariableBasics/casting.html">3.6. Casting Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VariableBasics/minAndMax.html">3.7. Integer Min and Max</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VariableBasics/randomNumbers.html">3.8. Random Numbers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VariableBasics/commonMistakes.html">3.9. Common Mistakes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VariableBasics/vEasyMC.html">3.10. Easy Multiple Choice Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VariableBasics/vMedMC.html">3.11. Medium Multiple Choice Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VariableBasics/vHardMC.html">3.12. Hard Multiple Choice Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VariableBasics/VariableSummary.html">3.13. Variables - Summary</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VariableBasics/VariableSummary.html#concept-summary">3.13.1. Concept Summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="VariableBasics/VariableSummary.html#java-keyword-summary">3.13.2. Java Keyword Summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="VariableBasics/VariableSummary.html#practice">3.13.3. Practice</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VariableBasics/VariablePractice.html">3.14. Code Practice with Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VariableBasics/VariablePracticeParsons.html">3.15. Mixed Up Code Practice</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Strings/toctree.html">4. Strings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Strings/sbasics.html">4.1. What is a String?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Strings/sbasics.html#declaring-and-creating-strings">4.2. Declaring and Creating Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Strings/sMethods.html">4.3. String Methods on the Exam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Strings/sEquality.html">4.4. String Equality</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Strings/sEquality.html#using-the-new-keyword">4.4.1. Using the New Keyword</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Strings/sEquality.html#using-string-literals">4.4.2. Using String Literals</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Strings/sOperators.html">4.5. String Operators - Concatenation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Strings/sMistakes.html">4.6. Common Mistakes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Strings/sResources.html">4.7. More Practice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Strings/sEasyMC.html">4.8. Easy Multiple Choice Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Strings/sMedMC.html">4.9. Medium Multiple Choice Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Strings/sHardMC.html">4.10. Hard Multiple Choice Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Strings/StringSummary.html">4.11. Strings - Summary</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Strings/StringSummary.html#concept-summary">4.11.1. Concept Summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Strings/StringSummary.html#java-keyword-summary">4.11.2. Java Keyword Summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Strings/StringSummary.html#method-summary">4.11.3. Method Summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Strings/StringSummary.html#practice">4.11.4. Practice</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Strings/StringPractice.html">4.12. Code Practice with Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Strings/StringPracticeParsons.html">4.13. Mixed Up Code Practice</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Conditionals/toctree.html">5. Conditionals</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Conditionals/cbasics.html">5.1. Conditionals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Conditionals/threeOrMore.html">5.2. Three or More Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Conditionals/cComplex.html">5.3. Complex Conditionals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Conditionals/cShortCircuit.html">5.4. Short Circuit Evaluation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Conditionals/cDeMorgans.html">5.5. DeMorgan’s Laws</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Conditionals/cMistakes.html">5.6. Common Mistakes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Conditionals/cPractice.html">5.7. More Practice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Conditionals/cEasyMC.html">5.8. Easy Multiple Choice Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Conditionals/cMedMC.html">5.9. Medium Multiple Choice Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Conditionals/cHardMC.html">5.10. Hard Multiple Choice Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Conditionals/timeFRQ.html">5.11. Free Response - Time</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Conditionals/timeFRQ.html#how-to-solve-this-problem">5.11.1. How to solve this problem</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Conditionals/CondSummary.html">5.12. Conditional - Summary</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Conditionals/CondSummary.html#concept-summary">5.12.1. Concept Summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Conditionals/CondSummary.html#java-keyword-summary">5.12.2. Java Keyword Summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Conditionals/CondSummary.html#practice">5.12.3. Practice</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Conditionals/CondPractice.html">5.13. Code Practice with Conditionals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Conditionals/CondParsonsPractice.html">5.14. Mixed Up Code Practice</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Labs/toctree.html">6. Magpie Chatbot Lab</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Labs/magpie1.html">6.1. Lab Requirement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Labs/magpie1.html#magpie-lab">6.2. Magpie Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Labs/magpie1.html#activity-1-exploring-chatbots">6.3. Activity 1: Exploring Chatbots</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Labs/magpie1.html#keywords">6.4. Keywords</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Labs/magpie2.html">6.5. Activity 2: Running Simplified Magpie Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Labs/magpie2.html#exercises">6.6. Exercises</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Labs/magpie2.html#activity-2-actual-code-optional">6.7. Activity 2: Actual Code - (Optional)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Labs/magpie3.html">6.8. Activity 3: Better Keyword Detection</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Labs/magpie3.html#more-string-methods">6.8.1. More String Methods</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Labs/magpie3.html#better-keyword-detection">6.8.2. Better Keyword Detection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Labs/magpie3.html#exercise-use-the-new-method">6.8.3. Exercise: Use the new method</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Labs/magpie3.html#questions-prepare-for-the-next-activity">6.8.4. Questions: Prepare for the next activity</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Labs/magpie4.html">6.9. Activity 4: Responses that Transform Statements</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Labs/magpie4.html#exercises">6.9.1. Exercises:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="LoopBasics/toctree.html">7. Loops</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="LoopBasics/lbasics.html">7.1. Loops in Java</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LoopBasics/lWhile.html">7.2. While Loops</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="LoopBasics/lWhile.html#tracing-variables-in-loops">7.2.1. Tracing Variables in Loops</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="LoopBasics/lFor.html">7.3. For Loops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LoopBasics/lNested.html">7.4. Nested For Loops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LoopBasics/lMistakes.html">7.5. Common Mistakes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LoopBasics/lPractice.html">7.6. More Practice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LoopBasics/lEasyMC.html">7.7. Easy Multiple Choice Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LoopBasics/lMedMC.html">7.8. Medium Multiple Choice Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LoopBasics/lHardMC.html">7.9. Hard Multiple Choice Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LoopBasics/selfDivisorA.html">7.10. Free Response - Self Divisor A</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="LoopBasics/selfDivisorA.html#how-to-solve-this-problem">7.10.1. How to solve this problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="LoopBasics/selfDivisorA.html#video-one-way-to-code-the-solution">7.10.2. Video - One way to code the solution</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="LoopBasics/stringScrambleA.html">7.11. Free Response - String Scramble A</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="LoopBasics/stringScrambleA.html#how-to-solve-this-problem">7.11.1. How to solve this problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="LoopBasics/stringScrambleA.html#figuring-out-the-algorithm">7.11.2. Figuring out the algorithm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="LoopBasics/stringScrambleA.html#video-the-algorithm">7.11.3. Video - The algorithm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="LoopBasics/stringScrambleA.html#write-the-code">7.11.4. Write the Code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="LoopBasics/stringScrambleA.html#video-one-way-to-code-the-solution">7.11.5. Video - One way to code the solution</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="LoopBasics/LoopSummary.html">7.12. Loops - Summary</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="LoopBasics/LoopSummary.html#concept-summary">7.12.1. Concept Summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="LoopBasics/LoopSummary.html#java-keyword-summary">7.12.2. Java Keyword Summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="LoopBasics/LoopSummary.html#practice">7.12.3. Practice</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="LoopBasics/LoopPractice.html">7.13. Code Practice with Loops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LoopBasics/LoopParsonsPractice.html">7.14. Mixed Up Code Practice</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ArrayBasics/toctree.html">8. Arrays</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ArrayBasics/abasics.html">8.1. Arrays in Java</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ArrayBasics/abasics.html#declaring-an-array">8.1.1. Declaring an Array</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ArrayBasics/abasics.html#creating-an-array">8.1.2. Creating an Array</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ArrayBasics/abasics.html#putting-values-in-an-array">8.1.3. Putting Values in an Array</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ArrayBasics/abasics.html#initializing-array-values">8.1.4. Initializing Array Values</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ArrayBasics/abasics.html#array-length">8.1.5. Array Length</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ArrayBasics/aForEach.html">8.2. Looping with the For-Each Loop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ArrayBasics/aLoopFrontToBack.html">8.3. Using a For Loop to Loop Through an Array</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ArrayBasics/aLoopBackToFront.html">8.4. Looping From Back to Front</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ArrayBasics/aLoopPart.html">8.5. Looping through Part of an Array</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ArrayBasics/aProcessAll.html">8.6. Things to Watch For When Looping Through an Array</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ArrayBasics/aMistakes.html">8.7. Common Mistakes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ArrayBasics/aPractice.html">8.8. More Practice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ArrayBasics/aEasyMC.html">8.9. Easy Multiple Choice Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ArrayBasics/aMedMC.html">8.10. Medium Multiple Choice Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ArrayBasics/aHardMC.html">8.11. Hard Multiple Choice Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ArrayBasics/arrayExam.html">8.12. Practice Exam for Arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ArrayBasics/selfDivisorB.html">8.13. Free Response - Self Divisor B</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ArrayBasics/selfDivisorB.html#how-to-solve-this-problem">8.13.1. How to solve this problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ArrayBasics/selfDivisorB.html#video-one-way-to-code-the-solution">8.13.2. Video - One way to code the solution</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ArrayBasics/horseBarnA.html">8.14. Free Response - Horse Barn A</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ArrayBasics/horseBarnA.html#how-to-solve-this-problem">8.14.1. How to solve this problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ArrayBasics/horseBarnA.html#try-it">8.14.2. Try It!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ArrayBasics/horseBarnA.html#video-one-way-to-code-the-solution">8.14.3. Video - One way to code the solution</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ArrayBasics/horseBarnB.html">8.15. Free Response - Horse Barn B</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ArrayBasics/horseBarnB.html#how-to-solve-this-problem">8.15.1. How to solve this problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ArrayBasics/horseBarnB.html#video-one-way-to-code-the-solution">8.15.2. Video - One way to code the solution</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ArrayBasics/soundA.html">8.16. Free Response - Sound A</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ArrayBasics/soundA.html#how-to-solve-this">8.16.1. How to Solve This</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ArrayBasics/soundA.html#mixed-up-code">8.16.2. Mixed Up Code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ArrayBasics/soundA.html#try-and-solve-part-a">8.16.3. Try and Solve Part A</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ArrayBasics/soundB.html">8.17. Free Response - Sound B</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ArrayBasics/soundB.html#how-to-solve-this">8.17.1. How to Solve This</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ArrayBasics/soundB.html#mixed-up-code">8.17.2. Mixed Up Code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ArrayBasics/soundB.html#try-and-solve-part-b">8.17.3. Try and Solve Part B</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ArrayBasics/numberCubeA.html">8.18. Free Response - Number Cube A</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ArrayBasics/numberCubeA.html#how-to-solve">8.18.1. How to Solve</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ArrayBasics/numberCubeA.html#mixed-up-code">8.18.2. Mixed Up Code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ArrayBasics/numberCubeA.html#try-and-solve-part-a">8.18.3. Try and Solve Part A</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ArrayBasics/numberCubeB.html">8.19. Free Response - Number Cube B</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ArrayBasics/numberCubeB.html#how-to-solve">8.19.1. How to Solve</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ArrayBasics/numberCubeB.html#mixed-up-code">8.19.2. Mixed Up Code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ArrayBasics/numberCubeB.html#try-and-solve-part-b">8.19.3. Try and Solve Part B</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ArrayBasics/aSummary.html">8.20. Arrays - Summary</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ArrayBasics/aSummary.html#concept-summary">8.20.1. Concept Summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ArrayBasics/aSummary.html#java-keyword-summary">8.20.2. Java Keyword Summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ArrayBasics/aSummary.html#practice">8.20.3. Practice</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ArrayBasics/ArrayPractice.html">8.21. Code Practice with Arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ArrayBasics/ArrayParsonsPractice.html">8.22. Mixed Up Code Practice</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ListBasics/toctree.html">9. List and ArrayList</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ListBasics/listbasics.html">9.1. Lists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ListBasics/listbasics.html#the-list-interface">9.2. The List Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ListBasics/listInterface.html">9.3. What is an Interface?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ListBasics/listInterface.html#interfaces-are-like-contracts">9.4. Interfaces are like Contracts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ListBasics/listInterface.html#list-methods-on-the-exam">9.5. List Methods on the Exam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ListBasics/listInterface.html#why-use-a-list">9.6. Why Use a List?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ListBasics/listArrayList.html">9.7. The ArrayList Class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ListBasics/listArrayList.html#the-import-statement">9.8. The Import Statement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ListBasics/listDeclareAndCreate.html">9.9. Declaring Lists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ListBasics/listDeclareAndCreate.html#creating-lists">9.10. Creating Lists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ListBasics/listAdd.html">9.11. Adding Values to a List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ListBasics/listMethods.html">9.12. Getting and Setting Values in a List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ListBasics/listMethods.html#removing-an-object-at-an-index">9.13. Removing an Object at an Index</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ListBasics/listLoop.html">9.14. Looping Through a List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ListBasics/listVsArray.html">9.15. Comparing Arrays and Lists</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ListBasics/listVsArray.html#when-to-use-a-list-or-an-array">9.15.1. When to use a List or an Array</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListBasics/listVsArray.html#declaring-an-array-or-list">9.15.2. Declaring an Array or List</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListBasics/listVsArray.html#creating-an-array-or-list">9.15.3. Creating an Array or List</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListBasics/listVsArray.html#setting-the-value-at-an-index-in-an-array-or-list">9.15.4. Setting the value at an index in an Array or List</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListBasics/listVsArray.html#getting-the-value-at-an-index-in-an-array-or-list">9.15.5. Getting the value at an index in an Array or List</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListBasics/listVsArray.html#getting-the-number-of-items-in-an-array-or-list">9.15.6. Getting the number of items in an Array or List</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ListBasics/listMistakes.html">9.16. Common Mistakes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ListBasics/lPractice.html">9.17. More Practice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ListBasics/listEasyMC.html">9.18. Easy Multiple Choice Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ListBasics/listMedMC.html">9.19. Medium Multiple Choice Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ListBasics/listHardMC.html">9.20. Hard Multiple Choice Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ListBasics/stringScrambleB.html">9.21. Free Response - String Scramble B</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ListBasics/stringScrambleB.html#how-to-solve-this-problem">9.21.1. How to solve this problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListBasics/stringScrambleB.html#the-algorithm">9.21.2. The Algorithm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListBasics/stringScrambleB.html#mixed-up-code">9.21.3. Mixed Up Code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListBasics/stringScrambleB.html#try-and-solve-it">9.21.4. Try and Solve It</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ListBasics/climbClubA.html">9.22. Free Response - Climbing Club A</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ListBasics/climbClubA.html#how-to-solve-this">9.22.1. How To Solve This</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListBasics/climbClubA.html#try-and-solve-it">9.22.2. Try and Solve It</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListBasics/climbClubA.html#video-one-way-to-code-the-solution">9.22.3. Video - One way to code the solution</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ListBasics/climbClubB.html">9.23. Free Response - Climbing Club B</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ListBasics/climbClubB.html#walk-through-the-example">9.23.1. Walk Through the Example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListBasics/climbClubB.html#algorithm">9.23.2. Algorithm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListBasics/climbClubB.html#how-to-solve-this">9.23.3. How To Solve This</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListBasics/climbClubB.html#try-and-solve-it">9.23.4. Try and Solve It</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListBasics/climbClubB.html#video-one-way-to-code-the-solution">9.23.5. Video - One way to code the solution</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ListBasics/climbClubC.html">9.24. Free Response - Climbing Club C</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ListBasics/climbClubC.html#try-it-out">9.24.1. Try it Out</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ListBasics/cookieOrderA.html">9.25. Free Response - CookieOrder A</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ListBasics/cookieOrderA.html#how-to-solve-this">9.25.1. How to Solve This</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListBasics/cookieOrderA.html#the-algorithm">9.25.2. The Algorithm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListBasics/cookieOrderA.html#solve-part-a">9.25.3. Solve Part A</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ListBasics/cookieOrderB.html">9.26. Free Response - CookieOrder B</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ListBasics/cookieOrderB.html#how-to-solve-this">9.26.1. How to Solve This</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListBasics/cookieOrderB.html#the-algorithm">9.26.2. The Algorithm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListBasics/cookieOrderB.html#solve-part-b">9.26.3. Solve Part B</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ListBasics/2016freeresponseQ4A.html">9.27. Free Response - StringFormatter A</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ListBasics/2016freeresponseQ4A.html#part-a">9.27.1. Part A</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListBasics/2016freeresponseQ4A.html#how-to-solve-part-a">9.27.2. How to Solve Part A</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListBasics/2016freeresponseQ4A.html#put-the-code-in-order">9.27.3. Put the Code in Order</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListBasics/2016freeresponseQ4A.html#write-the-code">9.27.4. Write the Code</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ListBasics/2016freeresponseQ4B.html">9.28. Free Response - StringFormatter B</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ListBasics/2016freeresponseQ4B.html#part-b">9.28.1. Part B</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListBasics/2016freeresponseQ4B.html#how-to-solve-part-b">9.28.2. How to Solve Part B</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListBasics/2016freeresponseQ4B.html#put-the-code-in-order">9.28.3. Put the Code in Order</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListBasics/2016freeresponseQ4B.html#write-the-code">9.28.4. Write the Code</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ListBasics/listSummary.html">9.29. List - Summary</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ListBasics/listSummary.html#concept-summary">9.29.1. Concept Summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListBasics/listSummary.html#practice">9.29.2. Practice</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ListBasics/listPractice.html">9.30. Code Practice with ArrayLists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ListBasics/ListParsonsPractice.html">9.31. Mixed Up Code Practice</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Array2dBasics/toctree.html">10. Two-dimensional Arrays</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Array2dBasics/a2dBasics.html">10.1. Introduction to 2D Arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Array2dBasics/a2dBasics.html#array-storage">10.2. Array Storage</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Array2dBasics/a2dBasics.html#how-java-stores-2d-arrays">10.2.1. How Java Stores 2D Arrays</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Array2dBasics/a2dDAS.html">10.3. Declaring 2D Arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Array2dBasics/a2dDAS.html#set-value-s-in-a-2d-array">10.4. Set Value(s) in a 2D Array</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Array2dBasics/a2dDAS.html#get-a-value-from-a-2d-array">10.5. Get a Value from a 2D Array</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Array2dBasics/a2dLoop.html">10.6. Getting the Number of Rows and Columns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Array2dBasics/a2dLoop.html#looping-through-a-2d-array">10.7. Looping Through a 2D Array</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Array2dBasics/a2dLoop.html#use-a-for-each-to-loop-through-an-array">10.8. Use a For-Each to Loop Through an Array</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Array2dBasics/a2dLoopPart.html">10.9. Loop Through Part of a 2D Array</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Array2dBasics/a2dMistakes.html">10.10. Common Mistakes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Array2dBasics/a2dPractice.html">10.11. More Practice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Array2dBasics/a2dEasyMC.html">10.12. Easy Multiple Choice Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Array2dBasics/a2dMedMC.html">10.13. Medium Multiple Choice Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Array2dBasics/a2dHardMC.html">10.14. Hard Multiple Choice Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Array2dBasics/grayImageA.html">10.15. Free Response - Gray Image A</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Array2dBasics/grayImageA.html#how-to-solve-this-problem">10.15.1. How to solve this problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Array2dBasics/grayImageA.html#video-one-way-to-code-the-solution">10.15.2. Video - One way to code the solution</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Array2dBasics/grayImageB.html">10.16. Free Response - Gray Image B</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Array2dBasics/grayImageB.html#how-to-solve-this-problem">10.16.1. How to solve this problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Array2dBasics/grayImageB.html#video-one-way-to-code-the-solution">10.16.2. Video - One way to code the solution</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Array2dBasics/routeCipherA.html">10.17. Free Response - Route Cipher A</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Array2dBasics/routeCipherA.html#how-to-solve-this">10.17.1. How to Solve This</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Array2dBasics/routeCipherA.html#the-algorithm">10.17.2. The Algorithm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Array2dBasics/routeCipherA.html#solve-part-a">10.17.3. Solve Part A</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Array2dBasics/routeCipherB.html">10.18. Free Response - Route Cipher B</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Array2dBasics/routeCipherB.html#how-to-solve-this">10.18.1. How to Solve This</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Array2dBasics/routeCipherB.html#the-algorithm">10.18.2. The Algorithm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Array2dBasics/routeCipherB.html#solve-part-b">10.18.3. Solve Part B</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Array2dBasics/Array2dParsonsPractice.html">10.19. Mixed Up Code Practice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Array2dBasics/Array2dCodePractice.html">10.20. Code Practice with 2D Arrays</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="OOBasics/toctree.html">11. Object-Oriented Concepts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="OOBasics/objectObasics.html">11.1. Object-Oriented Programming Concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OOBasics/objects&amp;Classes.html">11.2. Objects and Classes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OOBasics/objects&amp;Classes.html#person-class">11.2.1. Person Class</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OOBasics/objects&amp;Classes.html#die-class">11.2.2. Die Class</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OOBasics/ooInheritance.html">11.3. Inheritance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OOBasics/ooInheritance.html#specifying-the-parent-class">11.4. Specifying the Parent Class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OOBasics/ooInheritance.html#why-use-inheritance">11.5. Why Use Inheritance?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OOBasics/ooAssocVsInherit.html">11.6. Association vs Inheritance</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OOBasics/ooAssocVsInherit.html#substitution-test-for-inheritance">11.6.1. Substitution Test for Inheritance</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OOBasics/ooOverrideInherited.html">11.7. The Equals Method</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OOBasics/ooOverrideInherited.html#the-inherited-equals-method-from-object">11.7.1. The Inherited Equals Method from Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OOBasics/ooOverrideInherited.html#string-overrides-equals">11.7.2. String Overrides Equals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OOBasics/ooOverrideInherited.html#overriding-the-inherited-equals-method">11.7.3. Overriding the Inherited Equals Method</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OOBasics/ooOverrideVsOverload.html">11.8. Overriding vs Overloading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OOBasics/ooSuper.html">11.9. Using Super to call an Overridden Method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OOBasics/ooInheritanceAccess.html">11.10. Access to Inherited Private Fields</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OOBasics/ooInheritanceAndConstructors.html">11.11. Inheritance and Constructors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OOBasics/ooAbstract.html">11.12. Abstract Classes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OOBasics/ooAbstract.html#abstract-classes-can-t-be-instantiated">11.12.1. Abstract Classes Can’t be Instantiated</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OOBasics/ooAbstract.html#abstract-classes-exist-to-be-subclassed">11.12.2. Abstract Classes Exist to be Subclassed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OOBasics/ooInheritanceAndInterfaces.html">11.13. Inheritance and Interfaces</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OOBasics/ooInheritanceAndInterfaces.html#what-is-the-purpose-of-an-interface">11.13.1. What is the purpose of an interface?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OOBasics/ooComparable.html">11.14. The Comparable Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OOBasics/ooPoly.html">11.15. Polymorphism</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OOBasics/ooMistakes.html">11.16. Common Mistakes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OOBasics/ooPractice.html">11.17. More Practice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OOBasics/ooEasyMC.html">11.18. Easy Multiple Choice Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OOBasics/ooMedMC.html">11.19. Medium Multiple Choice Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OOBasics/ooHardMC.html">11.20. Hard Multiple Choice Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OOBasics/ooParsonsPractice.html">11.21. Mixed Up Code Practice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OOBasics/ooCodePractice.html">11.22. Code Practice with Object Oriented Concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OOBasics/TrioA.html">11.23. Free Response - Trio A</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OOBasics/TrioA.html#try-and-solve-it">11.23.1. Try and Solve It</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OOBasics/TrioScore1.html">11.24. Trio Student Solution 1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OOBasics/TrioScore1.html#grading-rubric">11.24.1. Grading Rubric</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OOBasics/TrioScore1.html#practice-grading">11.24.2. Practice Grading</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OOBasics/TrioScore2.html">11.25. Trio Student Solution 2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OOBasics/TrioScore2.html#grading-rubric">11.25.1. Grading Rubric</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OOBasics/TrioScore2.html#practice-grading">11.25.2. Practice Grading</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OOBasics/TrioScore3.html">11.26. Trio Student Solution 3</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OOBasics/TrioScore3.html#grading-rubric">11.26.1. Grading Rubric</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OOBasics/TrioScore3.html#practice-grading">11.26.2. Practice Grading</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OOBasics/APLine.html">11.27. Free Response - APLine</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OOBasics/APLine.html#try-and-solve-it">11.27.1. Try and Solve It</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Recursion/toctree.html">12. Recursion</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Recursion/recursionbasics.html">12.1. Recursion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Recursion/recursionbasics.html#what-is-recursion">12.2. What is Recursion?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Recursion/rWhyUseIt.html">12.3. Why use Recursion?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Recursion/rTraceMethods.html">12.4. Tracing Recursive Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Recursion/rMistakes.html">12.5. Common Mistakes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Recursion/rPractice.html">12.6. More Practice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Recursion/rEasyMC.html">12.7. Easy Multiple Choice Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Recursion/rMedMC.html">12.8. Medium Multiple Choice Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Recursion/rHardMC.html">12.9. Hard Multiple Choice Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="SearchSort/toctree.html">13. Searching and Sorting</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="SearchSort/searchBasics.html">13.1. Searching and Sorting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SearchSort/seqSearch.html">13.2. Sequential Search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SearchSort/binarySearch.html">13.3. Binary Search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SearchSort/selSort.html">13.4. Selection Sort</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SearchSort/insertionSort.html">13.5. Insertion Sort</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SearchSort/mergeSort.html">13.6. Merge Sort</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SearchSort/ssEasyMC.html">13.7. Easy Multiple Choice Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SearchSort/ssMedMC.html">13.8. Medium Multiple Choice Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Tests/toctree.html">14. Preparing for the Exam</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Tests/testPractice.html">14.1. Preparing for the AP CS A Exam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Tests/test1nt.html">14.2. Exam 1 for the AP CS A Exam (not timed)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Tests/test2nt.html">14.3. Exam 2 for the AP CS A Exam (not timed)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Tests/test3nt.html">14.4. Exam 3 for the AP CS A Exam (not timed)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Tests/test4nt.html">14.5. Exam 4 for the AP CS A Exam (not timed)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="TimedTests/toctree.html">15. Timed Multiple-Choice Exams</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="TimedTests/test1.html">15.1. Practice Exam 1 for the AP CS A Exam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TimedTests/test2.html">15.2. Practice Exam 2 for the AP CS A Exam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TimedTests/test3.html">15.3. Practice Exam 3 for the AP CS A Exam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TimedTests/test4.html">15.4. Practice Exam 4 for the AP CS A Exam</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="appendix-1">
+<h2>Appendix 1<a class="headerlink" href="#appendix-1" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Appendix/DrJava.html">DrJava (an IDE)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Appendix/gridWorld.html">Setting up DrJava for GridWorld</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="indices">
+<h2>Indices<a class="headerlink" href="#indices" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
+<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
+</ul>
+</div>
+</div>
+
+
+  
+      
+  <li id="relations-next" class="navLink" title='Next Section - 1. Preface and Getting Setup' data-toggle="tooltip" >
+    <a href="GettingStarted/toctree.html" >
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
+    </a>
+  </li>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="GettingStarted/toctree.html" >Next Section - 1. Preface and Getting Setup</a>
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+  
+</script>
+  
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      
+      <span id='numuserspan'></span> readers online now | <span class='loggedinuser'></span>
+      
+      | <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015 barb.
+      Created using <a href="http://runestoneinteractive.org/">Runestone</a> .
+    </p>
+  </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>
